@@ -1,0 +1,147 @@
+/* Resetar as informações padrões do site */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --roxo:#d33ea694;
+    --alaranjado:#F27E63;
+    --branco: white;
+    --preto: black;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--escuro);
+    color: var(--escuro);
+    padding: 3%;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--escuro);
+    padding: 3%;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*ESTILOS DA PÁGINA INDEX.HTML*/
+
+header .menu {
+    background: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+header .logo {
+    color: var(--escuro);
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-align: left;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--escuro);
+    font-size: 18px;
+    margin-left: 15px;  
+}
+
+header nav a:hover {
+    color: var(--claro);
+}
+
+main .sobre {
+    background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.5)100%), url(/assets/img/black-woman.jpg) ;
+    height: 300px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+main .sobre h2 {
+    color: 
+}
+
+main .sobre p {
+    margin-right: 50%;
+    color: rgb(248, 242, 253);
+}
+
+main .conteudo-1 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+main .conteudo-2 {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    margin-right: 1%;
+}
+
+main .conteudo-2-video {
+    margin-left: 3%;
+    margin-right: 1%;
+}
+
+main .conteudo-2-texto {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    text-align: center;
+}
+
+footer .links a {
+    padding: 1%;
+    text-decoration: none;
+    color: black;
+}
+
+footer .links a:hover {
+    opacity: 0.5;
+}
+
+.tm-social {
+    width: 30px;
+    height: 30px;
+}
+
+/*ESTILOS DA PÁGINA CONTATO.HTML*/
+
+main .contato {
+    background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.5)100%), url(/assets/img/meeting-black-women.jpg) ;
+    background-color: var(--alaranjado);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
