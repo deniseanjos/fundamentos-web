@@ -5,33 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-    <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="contato.html">Contato</a></li>
-    </ul>
+    <header>
+        <div class="menu">
+            <div class="logo">D&Impact</div>
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+        </div>
+    </header>
 
-    <h1>Entre em contato conosco</h1>
+    <main class="contato">
 
-    <form action="">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome">
+        <div class="formulario">
+            <form action="">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome">
+        
+                <label for="email">E-mail:</label>
+                <input type="email" id="email">
+        
+                <label for="assunto">Assunto:</label>
+                <textarea name="assunto" id="assunto" cols="30" rows="5"></textarea>
+        
+                <button>Enviar</button>
+            </form>
+        </div>
 
-        <label for="email">E-mail:</label>
-        <input type="email" id="email">
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.5712814499684!2d-46.66138608554258!3d-23.58383626830656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59efc12066a3%3A0x79b6769dec1ee80f!2sMuseum%20Afro%20Brazil!5e0!3m2!1sen!2sbr!4v1615308019873!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    
+    </main>
 
-        <label for="assunto">Assunto:</label>
-        <textarea name="assunto" id="assunto" cols="30" rows="5"></textarea>
-
-        <button>Enviar</button>
-    </form>
-
-    <h2>Endereço:</h2>
-    <h3>Museu Afro Brazil</h3>
-    <p>Portão 10, Av. Pedro Álvares Cabral, s/n - Vila Mariana, São Paulo, 04094-050</p>
-
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.5712814499684!2d-46.66138608554258!3d-23.58383626830656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59efc12066a3%3A0x79b6769dec1ee80f!2sMuseum%20Afro%20Brazil!5e0!3m2!1sen!2sbr!4v1615308019873!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <hr>
+    <footer>
+        <div class="links">
+            <a href="https://www.linkedin.com/in/deniseanjos/" target="_blank">
+                <img class="tm-social" src="/assets/img/linkedin.png" alt="Logo Clicável - Linkedin ">
+            </a>
+            <a href="https://github.com/deniseanjos" target="_blank">
+                <img class="tm-social" src="/assets/img/github.png" alt="Logo Clicável - GitHub">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img class="tm-social" src="/assets/img/instagram.png" alt="Logo Clicável - Instagram">
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <img class="tm-social" src="/assets/img/facebook.png" alt="Logo Clicável - Facebook">
+            </a>
+        </div>
+        <div class="texto">
+            Denise Anjos &copy Todos os direitos reservados.
+        </div>
+    </footer>
 
 </body>
 </html>
