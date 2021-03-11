@@ -7,6 +7,7 @@
     <title>Contato</title>
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
+
 <body>
     <header>
         <div class="menu">
@@ -17,29 +18,37 @@
             </nav>
         </div>
     </header>
-
-    <main class="contato">
-
-        <div class="formulario">
-            <form action="">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome">
-        
-                <label for="email">E-mail:</label>
-                <input type="email" id="email">
-        
-                <label for="assunto">Assunto:</label>
-                <textarea name="assunto" id="assunto" cols="30" rows="5"></textarea>
-        
-                <button>Enviar</button>
+    
+    <div class="pagina-contato">
+        <div class="formulario-contato">
+            <form>
+                <div class="form-esp">
+                    <h3>Deixe sua mensagem aqui:</h3>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" onkeyup="validaNome()">
+                </div>
+                <div id="txtNome"></div>
+                <div class="form-esp">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" onkeyup="validaEmail()">
+                </div>
+                <div id="txtEmail"></div>
+                <div class="form-esp">
+                    <label for="assunto">Assunto:</label>
+                    <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()"></textarea>
+                </div>
+                <div id="txtAssunto"></div>
+                <div class="form-esp">
+                    <button role="button" class="botao" onclick="enviar()">Enviar</button>
+                </div>
             </form>
         </div>
 
-        <div class="mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.5712814499684!2d-46.66138608554258!3d-23.58383626830656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59efc12066a3%3A0x79b6769dec1ee80f!2sMuseum%20Afro%20Brazil!5e0!3m2!1sen!2sbr!4v1615308019873!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class='mapa-esp'>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.5712814499684!2d-46.66138608554258!3d-23.58383626830656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59efc12066a3%3A0x79b6769dec1ee80f!2sMuseum%20Afro%20Brazil!5e0!3m2!1sen!2sbr!4v1615308019873!5m2!1sen!2sbr" width="600" height="520" style="border:0;" allowfullscreen="" id="mapa" onmousemove="mapaZomm()" onmouseout="mapaNormal()"></iframe>
         </div>
-    
-    </main>
+
+    </div>
 
     <hr>
     <footer>
@@ -61,6 +70,8 @@
             Denise Anjos &copy Todos os direitos reservados.
         </div>
     </footer>
+
+    <script src="assets/js/script.js"></script>
 
 </body>
 </html>
