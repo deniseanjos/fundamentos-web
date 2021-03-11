@@ -6,22 +6,22 @@
 }
 
 :root {
-    --roxo:#d33ea694;
-    --alaranjado:#F27E63;
-    --branco: white;
-    --preto: black;
+    --lilas:#C09CD9;
+    --roxo: #7D60A6;
+    --azul:#353FF2;
+    --tomverdeescuro: #A69C0F;
+    --tomverdeclaro: #D9CC1E;
 }
 
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: var(--escuro);
-    color: var(--escuro);
+    color: var(--roxo);
     padding: 3%;
 }
 
 h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: var(--escuro);
+    color: var(--azul);
     padding: 3%;
 }
 
@@ -30,6 +30,7 @@ p {
     text-align: justify;
     margin-left: 3%;
     margin-right: 3%;
+    color:black;
 }
 
 .center {
@@ -38,10 +39,9 @@ p {
     justify-content: space-between;
 }
 
-/*ESTILOS DA PÁGINA INDEX.HTML*/
-
 header .menu {
     background: white;
+    background-size: cover;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -52,7 +52,7 @@ header .menu {
 }
 
 header .logo {
-    color: var(--escuro);
+    color: var(--roxo);
     text-decoration: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 30px;
@@ -61,14 +61,41 @@ header .logo {
 
 header nav a {
     text-decoration: none;
-    color: var(--escuro);
+    color: var(--tomverdeescuro);
     font-size: 18px;
     margin-left: 15px;  
 }
 
 header nav a:hover {
-    color: var(--claro);
+    color: var(--roxo);
 }
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+    margin: 0;
+    padding: 1%;
+    border: 0;
+}
+
+footer .links a {
+    padding: 1%;
+    text-decoration: none;
+    color: black;
+}
+
+footer .links a:hover {
+    opacity: 0.5;
+}
+
+.tm-social {
+    width: 30px;
+    height: 30px;
+}
+
+/*ESTILOS DA PÁGINA INDEX.HTML*/
 
 main .sobre {
     background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.5)100%), url(/assets/img/black-woman.jpg) ;
@@ -106,6 +133,7 @@ main .conteudo-2 {
 main .conteudo-2-video {
     margin-left: 3%;
     margin-right: 1%;
+    margin-bottom: 3%;
 }
 
 main .conteudo-2-texto {
@@ -113,35 +141,58 @@ main .conteudo-2-texto {
     flex-direction: column;
 }
 
-footer {
-    display: flex;
-    flex-direction: column;
-    padding: 1%;
-    text-align: center;
-}
-
-footer .links a {
-    padding: 1%;
-    text-decoration: none;
-    color: black;
-}
-
-footer .links a:hover {
-    opacity: 0.5;
-}
-
-.tm-social {
-    width: 30px;
-    height: 30px;
-}
 
 /*ESTILOS DA PÁGINA CONTATO.HTML*/
 
-main .contato {
-    background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.5)100%), url(/assets/img/meeting-black-women.jpg) ;
-    background-color: var(--alaranjado);
+.pagina-contato {
+    background-color: var(--lilas);
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5%;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+.formulario-contato input {
+    flex: none; 
+    display: block;
+    font-size: 1em;
+    width: 293px;
+}
+
+.formulario-contato textarea {
+    margin: 0px;
+    width: 293px;
+    height: 183px;
+}
+
+.formulario-contato input {
+    flex: 1 1 auto; 
+    display: block;
+    margin-bottom: 10px;
+    margin-right: 8px;
+    padding: 4px;
+    margin-top: 4px;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    border-radius: 2px;
+    color: white;
+    padding: 1.5%;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+    margin-left: auto;
+    text-transform: uppercase;
+    
+}
+
+.botao:hover {
+    background-color: white;
+    color:black;
 }
