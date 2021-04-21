@@ -34,7 +34,7 @@ h2 {
 h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: var(--azul);
-    margin-bottom: 10%; 
+    margin-bottom: 5%; 
 }
 
 p {
@@ -147,7 +147,6 @@ main .conteudo-2 {
 
 main .conteudo-2-video {
     margin-left: 5%;
-    margin-right: 1%;
     margin-bottom: 5%;
 }
 
